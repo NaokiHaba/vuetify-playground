@@ -9,6 +9,14 @@
           </v-card-text>
         </v-card>
       </v-col>
+      <v-col cols="12">
+        <v-card>
+          <v-card-title>グルーピングされたサイドバー</v-card-title>
+          <v-card-text>
+            <router-link to="/sidebar">link </router-link>
+          </v-card-text>
+        </v-card>
+      </v-col>
     </v-row>
   </v-container>
 </template>

@@ -1,6 +1,7 @@
 import {createRouter, createWebHistory} from "vue-router";
 import HomePage from "@/pages/homePage.vue";
 import Upload from "@/pages/upload.vue";
+import SideBar from "@/pages/sideBar.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,6 +15,11 @@ const router = createRouter({
       path: '/media-upload',
       name: 'MediaUpload',
       component: Upload
+    },
+    {
+      path: '/sidebar',
+      name: 'Sidebar',
+      component:SideBar
     }
   ]
 })
