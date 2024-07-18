@@ -14,6 +14,8 @@ import App from '../App.vue'
 import { createApp } from 'vue'
 import router from "@/router";
 import {createPinia} from "pinia";
+import CKEditor from '@ckeditor/ckeditor5-vue';
+import 'tinymce/skins/ui/oxide/skin.min.css'
 
 const app = createApp(App)
 
@@ -24,4 +26,5 @@ app.use(pinia)
 
 registerPlugins(app)
 
+app.use(CKEditor)
 app.mount('#app')
